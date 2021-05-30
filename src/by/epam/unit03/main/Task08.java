@@ -12,19 +12,19 @@ public class Task08 {
 		
 		while (true) {
 
-		System.out.print("Введите операнд X: ");
+		System.out.print("Пожалуйста введите операнд X: ");
 		while(!scanner.hasNextDouble()){
 			scanner.next();
 			System.out.println("Вы ввели не число.");
-			System.out.print("Введите операнд X: ");
+			System.out.print("Пожалуйста введите операнд X: ");
 			}
 		x = scanner.nextDouble();
 		
-		System.out.print("Введите операнд Y: ");
+		System.out.print("Пожалуйста введите операнд Y: ");
 		while(!scanner.hasNextDouble()){
 			scanner.next();
 			System.out.println("Вы ввели не число.");
-			System.out.print("Введите операнд Y: ");
+			System.out.print("Пожалуйста введите операнд Y: ");
 			}
 		y = scanner.nextDouble();
 		
