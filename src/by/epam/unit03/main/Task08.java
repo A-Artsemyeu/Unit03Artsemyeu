@@ -12,23 +12,23 @@ public class Task08 {
 		
 		while (true) {
 
-		System.out.print("Введите операнд X: ");
+		System.out.print("Р’РІРµРґРёС‚Рµ РѕРїРµСЂР°РЅРґ X: ");
 		while(!scanner.hasNextDouble()){
 			scanner.next();
-			System.out.println("Вы ввели не число.");
-			System.out.print("Введите операнд X: ");
+			System.out.println("Р’С‹ РІРІРµР»Рё РЅРµ С‡РёСЃР»Рѕ.");
+			System.out.print("Р’РІРµРґРёС‚Рµ РѕРїРµСЂР°РЅРґ X: ");
 			}
 		x = scanner.nextDouble();
 		
-		System.out.print("Введите операнд Y: ");
+		System.out.print("Р’РІРµРґРёС‚Рµ РѕРїРµСЂР°РЅРґ Y: ");
 		while(!scanner.hasNextDouble()){
 			scanner.next();
-			System.out.println("Вы ввели не число.");
-			System.out.print("Введите операнд Y: ");
+			System.out.println("Р’С‹ РІРІРµР»Рё РЅРµ С‡РёСЃР»Рѕ.");
+			System.out.print("Р’РІРµРґРёС‚Рµ РѕРїРµСЂР°РЅРґ Y: ");
 			}
 		y = scanner.nextDouble();
 		
-		System.out.print("Введите знак операции (+, –, /, *): ");
+		System.out.print("Р’РІРµРґРёС‚Рµ Р·РЅР°Рє РѕРїРµСЂР°С†РёРё (+, вЂ“, /, *): ");
 
 		operationOfSign = scanner.next().charAt(0);
 		
@@ -38,7 +38,7 @@ public class Task08 {
 			z = x + y;
 			System.out.println("z = "+ z);
 			break;
-		case '-':
+		case '-':   
 			z = x - y;
 			System.out.println("z = "+ z);
 			break;
@@ -48,7 +48,7 @@ public class Task08 {
 			break;
 		case '/':
 			if (y == 0) {
-				System.out.println("Деление на ноль недопустимо. Повторите ввод.");
+				System.out.println("Р”РµР»РµРЅРёРµ РЅР° РЅРѕР»СЊ РЅРµРґРѕРїСѓСЃС‚РёРјРѕ. РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ.");
 				break;
 			} else {
 			z = x / y;
@@ -56,10 +56,10 @@ public class Task08 {
 			}
 			break;
 		default:
-            System.out.println("Вы ввели не (+, –, /, *). Повторите ввод.");
+            System.out.println("Р’С‹ РІРІРµР»Рё РЅРµ (+, вЂ“, /, *). РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ.");
             continue;            
 		}	
-		System.out.print("Введите # для выхода из программы либо Enter для продолжения: ");	
+		System.out.print("Р’РІРµРґРёС‚Рµ # РґР»СЏ РІС‹С…РѕРґР° РёР· РїСЂРѕРіСЂР°РјРјС‹ Р»РёР±Рѕ Enter РґР»СЏ РїСЂРѕРґРѕР»Р¶РµРЅРёСЏ: ");	
 		if (scanner.hasNextLine()) {
 			scanner.nextLine();
 			if (scanner.nextLine().equals("#")) {
@@ -68,9 +68,7 @@ public class Task08 {
 		}else if (scanner.nextLine().equals ("")) {
 			continue;
 			}
-
 		}
 		scanner.close();
-	}
-
+	} 
 }
