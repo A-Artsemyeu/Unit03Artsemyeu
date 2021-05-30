@@ -10,7 +10,7 @@ public class Task06 {
 		
 		for (int i = a; i > 0; i = i / 10) {
 			numberFirst =  i % 10;
-			for (int j = b; j > 0; j = j /10) {
+			for (int j = b; j > 0; j = j / 10) {
 				numberSecond = j % 10;
 				if (numberFirst == numberSecond) {
 					number = numberFirst;
