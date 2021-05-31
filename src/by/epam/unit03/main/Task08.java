@@ -71,4 +71,4 @@ public class Task08 {
 		}
 		scanner.close();
 	} 
-}
+}// зачтено
